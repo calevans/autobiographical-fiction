@@ -1,0 +1,44 @@
+---
+title: "Age 9: …and God Spoke"
+template: "standard_page"
+category: "index"
+description: ""
+original_url: "https://autobiographicalfiction.calevans.com/2008/04/12/age-9-and-god-spoke/"
+date: "2008-04-12 00:00:00"
+image: "assets/images/age-9-and-god-spoke.jpg"
+midjourneyPrompt: "A view from a high church balcony looking down at a congregation, a stern man in a suit at the pulpit pointing directly up at the viewer, 1970s style, vintage mystery paperback cover, dramatic perspective, tension, no text --v 7"
+tags:
+  - "Cal Evans"
+  - "Charlotte"
+  - "choir"
+  - "memory"
+  - "Mom"
+  - "Music"
+---
+
+**By Cal Evans**
+
+Growing up in church is an experience in and of itself. I do not mean growing up going to church but literally growing up in a church. If the doors were open, and many times when they were not, we were there. Such is the life growing up in the house of a Minister of Music. In my ninth year in this ever-unfolding play we call life, the church I was growing up in was in Charlotte, North Carolina. It was a beautiful church and at nine, it seemed huge. One time I remember thinking that the baptistery was big enough to host a pool party in. Funny how I knew even then that if I acted on that thought, the consequences would be grave. I wish this brief flash of common sense had stayed with me for other impulses, for it would have saved me no end of trouble, especially in this one instance.
+
+The thing I remember most about this particular church was the balcony. This was the first church I remember us attending that had one. Truth be told, it is only the second church I remember us attending, and the memory of the first one is pretty fuzzy, but I’m almost positive that it did not contain a balcony. If it did, it was not grand enough to make an impression on me as this one did.
+Each week, during choir rehearsals, Deacons' meetings, and other non-worship times at the church, I would find myself inevitably drawn up into the balcony to play among the chairs. Great cities rose and fell amongst the aisles of chairs when I and my small collection of cars would arrive. It was my imaginary playground.
+
+But during any worship service, it was strictly off-limits. During the service, I dutifully took my place on the front row, right side, aisle seat, where I was visible by both parents; Dad from his perch in the high-backed chair reserved for leaders of worship, and Mom from her front-row seat in the choir loft. They would take turns keeping a watchful eye on me and whatever friend sat with me. Usually a well-behaved child, I knew immediately if and when I had crossed the invisible line into mischief. Even before I would look up to confirm, I could feel the weight of Mom’s stare on my head. Many times I foolishly tried to ignore it, thinking that as long as I did not look up, she could not scold me. When I could take it no longer, I would sneak a peek. She would still be watching, the look on her face instantly conveying a tirade that would have lasted ten minutes had it been vocal. I knew I had been caught, tried and convicted; sentence would be passed down on our way home that afternoon.
+
+Then it happened. One magical week, I asked my father if it would be ok if I sat in the balcony instead of my normal perch. In a moment of weakness, he acquiesced with the stern warning that if I misbehaved, he would still be able to see me and the punishments would likely be more severe. I stood tall and assured him that I would be on my best behavior. I was a man. I was grown up. I was allowed to sit in the balcony! I boldly walked up the stairs, dragging one of my friends, whose mother was also in the choir, with me. We would be worshiping in the balcony today.
+
+We took our seats on the front row. The seats were theater-style seats. Made of wood and connected together, the bottom half folded up, allowing more room for walking. Each seat was individual, as opposed to the bench-style pews located in the lower auditorium. It was like sitting in a 30s-era movie theater up there. I chose the aisle seat and sat down, my friend next to me. The safety rail in front of us cut most of my vision of the lower auditorium, but I could see the podium just fine, and they could see me as well. This last fact slipped right out of my mind and onto the floor where it was promptly forgotten.
+
+The service began, as all Baptist services of that era did, with the congregation standing to sing from the hymnals. All around me, people were gathering hymnals, finding the proper page, and singing along with all their might regardless of their level of proficiency. Being the son of a Minister of Music, I had been taught to perform this ritual years ago. Before I could count, I could find Hymn #215 in my hymnal. The first words I learned to read were “How Great Thou Art,” and though I could not read music to save my life, I had memorized the melodies of the popular hymns and could sing along as well as anyone. But this particular time, my friend and I stayed seated. Obviously mistaking the safety rail for an invisible force field, protecting us from our parents' sight and wrath, we sat there giggling quietly and drew on our bulletins. This being my first service in the balcony, Mom had not learned yet how to project her looks that far, so I had no idea that I was digging myself a hole. She glowered at me to no avail; I did not feel her stare, therefore, I did not look up. I was blissfully and blindly walking off a cliff.
+
+The song came and went without us moving. Our giggling swelled with the music, but as the song came to an end, we brought our noises back down to barely audible. The service continued; the sky had not fallen. We felt we had gotten away scot-free. This was working out too well. The second congregational song began with the normal rustling of pages and grunting as people stood. The first verse and chorus came and went without much notice from my friend and me. By now, we were in full-blown mischief mode. We were in the middle of a rousing game of connect-the-dots when the room grew silent. I heard a voice from far off calling my name. Slowly, it penetrated our force field and I recognized it as my father’s voice. I looked up. The entire congregation was standing, many looking back up my way. My father stood at the pulpit talking to me.
+
+It took my nine-year-old brain a second to comprehend what was going on. For the first and only time I can remember, a Baptist worship service had stopped so someone could deliver a personal message to one of the congregation. Time had stopped in my little world. Deep within me, a hole opened up, and I could feel the life slowly start to drain from me. There was no way that this could be a good thing. There was no way it could be anything but a very bad thing. All of this happened in the split second it took me to look up and glance at my father, and from there to my mother’s face to confirm. I was in trouble and in deep.
+
+“Cal,” he said, after excusing himself to the congregation. “I want you to stand up and take your hymnal, turn to the proper page, and sing along with us, Son.” His voice was calm and level. His look conveyed the true message.
+
+With his eyes, he said, “Cal, when we get home, you won’t be able to sit down for a while, your rear will be so sore from the beating you will receive. I’m pretending to be calm for the sake of the people listening but you and I both know that I’m going to cut loose on you when we get home. Your only hope for redemption is to do exactly what I am telling you right now, with a smile on your face. Possibly, if you do that, and an earthquake opens up a chasm and swallows me up before we get home, you will survive the day.”
+
+Slowly, I stood, a smile frozen on my face. Without looking down, I picked up a hymnal and, with a practiced hand, thumbed to the proper page. As Dad returned to the congregation, he flicked his wrist and time returned to normal again with the restarting of the music. I sang at the top of my lungs for the rest of that song. It was important to me that Dad and Mom not only see me participating; they must hear me as well.
+
+My mind chose not to record what happened that afternoon. I’m sure that with years of therapy and hypnosis, we could pull it out, but why? I know in my heart what happened. I got a beating that afternoon like I had never received. It must be that, because even now, years later, every time the Minister of Music stands to lead the congregation in a song, I frantically thumb the hymnal to find the proper song and stand quickly, always glancing at the choir loft looking for a look of approval from Mom.

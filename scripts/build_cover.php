@@ -13,8 +13,8 @@ if (file_exists($pageCountFile)) {
 }
 
 $trimWidthIn = 5.25;
-$trimHeightIn = 8.25;
-$wrapIn = 0.625;
+$trimHeightIn = 8.5; // Updated to 8.5" per Lulu guide
+$wrapIn = 0.625; // Uniform wrap of 0.625" per Lulu guide
 $paperThicknessIn = 0.002252;
 // $spineWidthIn = $pageCount * $paperThicknessIn;
 $spineWidthIn = 0.25; // Fixed spine width as requested
@@ -25,6 +25,7 @@ $totalHeightIn = $wrapIn + $trimHeightIn + $wrapIn;
 $mmPerInch = 25.4;
 $totalWidthMm = $totalWidthIn * $mmPerInch;
 $totalHeightMm = $totalHeightIn * $mmPerInch;
+$trimWidthMm = $trimWidthIn * $mmPerInch;
 
 $backWidthMm = ($wrapIn + $trimWidthIn) * $mmPerInch;
 $spineWidthMm = $spineWidthIn * $mmPerInch;
@@ -35,7 +36,7 @@ $spineX = $backWidthMm;
 $frontX = $spineX + $spineWidthMm;
 
 // 2. Image Path
-$imagePath = realpath(__DIR__ . '/../originals/content/assets/images/abf_cover2.png');
+$imagePath = realpath(__DIR__ . '/../originals/content/assets/images/abf_cover3.png');
 if (!$imagePath) {
     die("Image not found!");
 }
@@ -64,7 +65,7 @@ $mpdf->SetTitle('Autobiographical Fiction - Hardback Cover');
 // Calculate Back Cover Text Position
 $backTextWidthMm = $backWidthMm * 0.7;
 $backTextLeftMm = ($backWidthMm - $backTextWidthMm) / 2;
-$backTextTopMm = $heightMm / 3;
+$backTextTopMm = $heightMm * 0.15;
 
 // HTML Structure
 // Back Cover | Spine | Front Cover
@@ -78,17 +79,17 @@ $html = '
         height: ' . $heightMm . 'mm;
         background-image: url("' . $imagePath . '");
         background-repeat: no-repeat;
-        background-size: 102%; /* Zoom in 2% */
+        background-size: 104%; /* Zoom in 4% */
         background-position: center center;
     }
     .front-title {
         position: absolute;
         top: 30mm;
         left: ' . $frontX . 'mm;
-        width: ' . $frontWidthMm . 'mm;
+        width: ' . $trimWidthMm . 'mm;
         text-align: center;
         color: yellow;
-        font-size: 42pt;
+        font-size: 36pt;
         font-family: sans-serif;
         font-weight: bold;
         text-shadow: 3px 3px 6px #000000;
@@ -96,9 +97,9 @@ $html = '
     }
     .front-byline {
         position: absolute;
-        bottom: 25mm;
+        bottom: 25mm; /* Moved up to clear the 0.625" (15.87mm) wrap area */
         left: ' . $frontX . 'mm;
-        width: ' . $frontWidthMm . 'mm;
+        width: ' . $trimWidthMm . 'mm;
         text-align: center;
         color: white;
         font-size: 24pt;
