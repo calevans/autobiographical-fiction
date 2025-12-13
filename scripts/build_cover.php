@@ -40,7 +40,15 @@ if (!$imagePath) {
     die("Image not found!");
 }
 
-// 3. Generate PDF
+// 3. Content
+$backCoverMd = __DIR__ . '/../content/back_cover.md';
+$backCoverHtml = '';
+if (file_exists($backCoverMd)) {
+    $Parsedown = new Parsedown();
+    $backCoverHtml = $Parsedown->text(file_get_contents($backCoverMd));
+}
+
+// 4. Generate PDF
 $mpdf = new Mpdf([
     'mode' => 'utf-8',
     'format' => [$totalWidthMm, $totalHeightMm],
@@ -52,6 +60,11 @@ $mpdf = new Mpdf([
 ]);
 
 $mpdf->SetTitle('Autobiographical Fiction - Hardback Cover');
+
+// Calculate Back Cover Text Position
+$backTextWidthMm = $backWidthMm * 0.7;
+$backTextLeftMm = ($backWidthMm - $backTextWidthMm) / 2;
+$backTextTopMm = $heightMm / 3;
 
 // HTML Structure
 // Back Cover | Spine | Front Cover
@@ -94,6 +107,19 @@ $html = '
         text-shadow: 3px 3px 6px #000000;
         z-index: 1000;
     }
+    .back-text-box {
+        position: absolute;
+        top: ' . $backTextTopMm . 'mm;
+        left: ' . $backTextLeftMm . 'mm;
+        width: ' . $backTextWidthMm . 'mm;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #FFFFFF;
+        padding: 5mm;
+        border-radius: 3mm;
+        font-size: 11pt;
+        line-height: 1.5;
+        z-index: 1000;
+    }
 </style>
 
 <!-- Back Cover Image -->
@@ -108,6 +134,11 @@ $html = '
 <!-- Front Title -->
 <div class="front-title">Autobiographical Fiction</div>
 <div class="front-byline">Cal Evans</div>
+
+<!-- Back Cover Text -->
+<div class="back-text-box">
+    ' . $backCoverHtml . '
+</div>
 ';
 
 $mpdf->WriteHTML($html);
