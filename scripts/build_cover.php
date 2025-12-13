@@ -16,7 +16,8 @@ $trimWidthIn = 5.25;
 $trimHeightIn = 8.25;
 $wrapIn = 0.625;
 $paperThicknessIn = 0.002252;
-$spineWidthIn = $pageCount * $paperThicknessIn;
+// $spineWidthIn = $pageCount * $paperThicknessIn;
+$spineWidthIn = 0.25; // Fixed spine width as requested
 
 $totalWidthIn = $wrapIn + $trimWidthIn + $spineWidthIn + $trimWidthIn + $wrapIn;
 $totalHeightIn = $wrapIn + $trimHeightIn + $wrapIn;
@@ -67,6 +68,32 @@ $html = '
         background-size: 102%; /* Zoom in 2% */
         background-position: center center;
     }
+    .front-title {
+        position: absolute;
+        top: 30mm;
+        left: ' . $frontX . 'mm;
+        width: ' . $frontWidthMm . 'mm;
+        text-align: center;
+        color: yellow;
+        font-size: 42pt;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-shadow: 3px 3px 6px #000000;
+        z-index: 1000;
+    }
+    .front-byline {
+        position: absolute;
+        bottom: 25mm;
+        left: ' . $frontX . 'mm;
+        width: ' . $frontWidthMm . 'mm;
+        text-align: center;
+        color: white;
+        font-size: 24pt;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-shadow: 3px 3px 6px #000000;
+        z-index: 1000;
+    }
 </style>
 
 <!-- Back Cover Image -->
@@ -77,6 +104,10 @@ $html = '
 
 <!-- Front Cover Image -->
 <div class="cover-panel" style="left: ' . $frontX . 'mm; width: ' . $frontWidthMm . 'mm;"></div>
+
+<!-- Front Title -->
+<div class="front-title">Autobiographical Fiction</div>
+<div class="front-byline">Cal Evans</div>
 ';
 
 $mpdf->WriteHTML($html);
