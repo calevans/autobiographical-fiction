@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ site_base_url }}assets/css/home.css">
+{% endblock %}
+
+{% block body %}
+    {{ content | raw }}
+{% endblock %}

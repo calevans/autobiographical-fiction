@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div class="home-grid-wrapper">
+    {% if features.CategoryIndex.category_files is defined and features.CategoryIndex.category_files|length > 0 %}
+        <div class="index-intro" style="max-width: 1200px; margin: 0 auto 30px; padding: 0 20px;">
+            {{ content|raw }}
+        </div>
+    {% endif %}
+
+    <div class="book-grid">
+        {% if features.CategoryIndex.category_files is defined and features.CategoryIndex.category_files|length > 0 %}
+            <ul>
+            {% for file in features.CategoryIndex.category_files|sort((a, b) => (a.title|split(':')[0]|replace({'Age ': ''})|trim) - (b.title|split(':')[0]|replace({'Age ': ''})|trim)) %}
+                {% include 'partials/book-card.html.twig' with { 'file': file } %}
+            {% endfor %}
+            </ul>
+        {% else %}
+            <article class="story-content">
+                <header class="story-header">
+                    {% if image %}
+                        <div class="single-book-cover-container">
+                            <div class="single-book-cover" style="--cover-image: url('{{ site_base_url }}/{{ image }}');">
+                                <span class="book-title">{{ title }}</span>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    {% if date %}
+                        <div class="story-meta">
+                            <time datetime="{{ date }}">{{ date|date("F j, Y") }}</time>
+                            {% if category and category != 'Uncategorized' %}
+                                <span class="separator">•</span>
+                                <span class="story-category">{{ category }}</span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </header>
+
+                <div class="story-body">
+                    {{ content|raw }}
+                </div>
+            </article>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

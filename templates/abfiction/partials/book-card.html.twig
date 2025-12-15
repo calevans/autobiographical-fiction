@@ -1,0 +1,5 @@
+<li>
+    <a href="{{ site_base_url|trim('/') }}{{ file.url }}" style="--cover-image: url('{{ site_base_url|trim('/') }}/{% if file.metadata.image %}{{ file.metadata.image }}{% else %}{{ file.image }}{% endif %}');">
+        <span class="book-title">{{ file.title }}</span>
+    </a>
+</li>

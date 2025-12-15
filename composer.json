@@ -1,0 +1,9 @@
+{
+    "require": {
+        "eicc/staticforge": "^1.11",
+        "calevans/staticforge-sitedownloader": "^1.0",
+        "erusev/parsedown": "^1.7",
+        "tecnickcom/tcpdf": "^6.10",
+        "mpdf/mpdf": "^8.2"
+    }
+}

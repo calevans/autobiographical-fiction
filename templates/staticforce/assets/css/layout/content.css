@@ -1,0 +1,20 @@
+/* Main Content */
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+/* Main Content Area */
+.content {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl);
+    box-shadow: var(--shadow-lg);
+    min-height: 80vh;
+}
+

@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{ site_base_url }}assets/css/docs.css">
+    <link rel="stylesheet" href="{{ site_base_url }}assets/css/components/chapter-nav.css">
+    <link rel="stylesheet" href="{{ site_base_url }}assets/css/components/toc.css">
+{% endblock %}
+
+{% block body %}
+    {% if hero %}
+    <div class="docs-hero" style="background-image: url('{{ site_base_url }}{{ hero }}');">
+        <div class="docs-hero-overlay"></div>
+        <div class="docs-hero-content">
+            <h1>{{ title }}</h1>
+            {% if description %}
+            <p class="docs-hero-description">{{ description }}</p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            {% if menu2 is defined %}
+                <div class="menu-section-title">User Guide</div>
+                {{ menu2|raw }}
+            {% endif %}
+
+            {% if menu3 is defined %}
+                <div class="menu-section-title">Features</div>
+                {{ menu3|raw }}
+            {% endif %}
+
+            {% if menu4 is defined %}
+                <div class="menu-section-title">Development</div>
+                {{ menu4|raw }}
+            {% endif %}
+        </aside>        <!-- Main Content -->
+        <main class="content">
+            {% if toc %}
+                <div class="toc-mobile">
+                    <div class="toc-title">On This Page</div>
+                    {{ toc|raw }}
+                </div>
+            {% endif %}
+
+            {% block content %}
+                {{ content|raw }}
+            {% endblock %}
+
+            {# Chapter Navigation #}
+            {% include '_chapter_nav.html.twig' %}
+        </main>
+
+        <!-- Right Sidebar (Table of Contents) -->
+        <aside class="toc">
+            {% if toc %}
+                <div class="toc-title">On This Page</div>
+                {{ toc|raw }}
+            {% endif %}
+        </aside>
+    </div>
+{% endblock %}

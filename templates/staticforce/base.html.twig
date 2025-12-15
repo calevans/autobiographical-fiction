@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ title | default('Documentation') }}{% if site_name %} | {{ site_name }}{% endif %}{% endblock %}</title>
+    {% if description %}
+    <meta name="description" content="{{ description }}">
+    {% endif %}
+{% if tags is defined and tags %}
+{% if tags is iterable %}
+{% if tags|length > 0 %}
+    <meta name="keywords" content="{{ tags|join(', ') }}">
+{% endif %}
+{% else %}
+    <meta name="keywords" content="{{ tags }}">
+{% endif %}
+{% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ site_base_url }}assets/css/main.css?v={{ build_id }}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="{{ site_base_url|default('/') }}" class="navbar-brand">
+                <div class="navbar-logo">SF</div>
+                <span>StaticForge</span>
+            </a>
+            {% if menu_top %}
+            <div class="navbar-menu-wrapper">
+                {{ menu_top|raw }}
+            </div>
+            {% endif %}
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    {% block body %}
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            {{ menu1|raw }}
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            {% block content %}
+                {{ content|raw }}
+            {% endblock %}
+        </main>
+    </div>
+    {% endblock %}
+
+    {% include 'staticforce/_footer.html.twig' %}
+
+    <script src="{{ site_base_url }}assets/js/main.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <article class="story-content">
+        <header class="story-header">
+            {% if image %}
+                <div class="single-book-cover-container">
+                    <div class="single-book-cover" style="--cover-image: url('{{ site_base_url|trim('/') }}/{{ image }}');">
+                        <span class="book-title">{{ title }}</span>
+                    </div>
+                </div>
+            {% endif %}
+
+            {# <h1 class="story-title">{{ title }}</h1> #}
+
+            {% if date %}
+                <div class="story-meta">
+                    <time datetime="{{ date }}">{{ date|date("F j, Y") }}</time>
+                    {% if category and category != 'Uncategorized' and category != 'index' %}
+                        <span class="separator">•</span>
+                        <span class="story-category">{{ category }}</span>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </header>
+
+        <div class="story-body">
+            {{ content|raw }}
+        </div>
+
+        <div class="story-footer">
+            <a href="{{ site_base_url|trim('/') }}" class="back-link">← Back to Home</a>
+        </div>
+
+        {% if features.ChapterNav is defined %}
+            <div class="chapter-nav">
+                {{ features.ChapterNav.html|raw }}
+            </div>
+        {% endif %}
+    </article>
+{% endblock %}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default('Autobiographical Fiction') }} | {{ site_name }}</title>
+
+    {% if description %}
+    <meta name="description" content="{{ description }}">
+    {% endif %}
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ site_base_url|trim('/') }}/assets/css/style.css?v={{ "now"|date("U") }}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container">
+                <a href="{{ site_base_url|trim('/') }}" class="site-title">{{ site_name }}</a>
+                <p class="site-tagline">{{ site_tagline }}</p>
+
+                <nav class="site-nav">
+                    {% if features.MenuBuilder.html.1 is defined %}
+                        {{ features.MenuBuilder.html.1|raw }}
+                    {% endif %}
+                </nav>
+            </div>
+        </header>
+
+        <main class="site-content">
+            <div class="container">
+                {% block content %}
+                    <article class="story-content">
+                        <header class="story-header">
+                            <h1 class="story-title">{{ title }}</h1>
+                            {% if date %}
+                                <div class="story-meta">
+                                    <time datetime="{{ date }}">{{ date|date("F j, Y") }}</time>
+                                    {% if category and category != 'Uncategorized' %}
+                                        <span class="separator">•</span>
+                                        <span class="story-category">{{ category }}</span>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        </header>
+
+                        <div class="story-body">
+                            {{ content|raw }}
+                        </div>
+
+                        {% if features.ChapterNav is defined %}
+                            <div class="chapter-nav">
+                                {{ features.ChapterNav.html|raw }}
+                            </div>
+                        {% endif %}
+                    </article>
+                {% endblock %}
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p><a href="https://calevans.com/staticforge">Built with ❤️ and PHP</a></p>
+                    <p>&copy; {{ "now"|date("Y") }} {{ site_name }}. All rights reserved.</p>
+                    {% if features.MenuBuilder.html.2 is defined %}
+                        <nav class="footer-nav">
+                            {{ features.MenuBuilder.html.2|raw }}
+                        </nav>
+                    {% endif %}
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
