@@ -25,3 +25,32 @@ template: "index"
 <img src="assets/images/abf_cover_3.jpg" alt="Autobiographical Fiction Cover" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
 </div>
+
+<div style="margin-top: 60px;">
+<img src="assets/images/IMG_2101.jpg" alt="The Physical Book" style="float: left; width: 300px; margin-right: 40px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+## The Story of the Book
+
+This project started back 20 years or so. I was bored one night, so I decided to write down one of the stories from my childhood as I remembered it. The original prologue for the stories - now lost to history - explained that I was doing it mostly out of boredom and to torture my mother.
+<br><br>
+
+They have lived for most of this time at a website named Autobiographical Fiction. I've moved them around a couple of times, but recently when reorganizing all of my sites, I came across them again and decided it was time for an update.
+<br><br>
+
+So, thanks to the miracle of AI, I present them here cleaned up, spell-checked, and with cute new covers done in the style of my favorite Detective Series from the 1960s and 1970s, Alfred Hitchcock and the Three Investigators. Some of them are actually spot on.
+<br><br>
+
+I showed them to Mom, who got to re-live the horrors of my childhood all over again. She laughed until she cried; she threatened to kill me. A good time was had by all.
+<br><br>
+
+As a late Christmas present, I used AI and Lulu.com to put them all into a book. I also printed copies for my siblings so that their kids will have yet another thing to throw away when we've all gone to Heaven.
+<br><br>
+
+As the dedication says:
+<br><br>
+"For Mom.
+<br><br>
+Thank you."
+
+<div style="clear: both;"></div>
+</div>
