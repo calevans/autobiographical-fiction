@@ -4,8 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5734427a7bd7b6dba885a6ac50eb9344",
+    "content-hash": "6e29948d6b6421feebafdd9a433a3ecd",
     "packages": [
+        {
+            "name": "calevans/staticforge-google-analytics",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/calevans/staticforge-google-analytics.git",
+                "reference": "a9764a4222331c4d4a4614e265362aef80ea7835"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/calevans/staticforge-google-analytics/zipball/a9764a4222331c4d4a4614e265362aef80ea7835",
+                "reference": "a9764a4222331c4d4a4614e265362aef80ea7835",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "staticforge": {
+                    "feature": "Calevans\\StaticForgeGoogleAnalytics\\Feature"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Calevans\\StaticForgeGoogleAnalytics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "StaticForge Feature: GoogleAnalytics",
+            "support": {
+                "issues": "https://github.com/calevans/staticforge-google-analytics/issues",
+                "source": "https://github.com/calevans/staticforge-google-analytics/tree/1.1.0"
+            },
+            "time": "2025-12-18T14:58:28+00:00"
+        },
         {
             "name": "calevans/staticforge-sitedownloader",
             "version": "1.0.2",
