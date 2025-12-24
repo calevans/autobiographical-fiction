@@ -34,13 +34,13 @@ template: "index"
 This project started back 20 years or so. I was bored one night, so I decided to write down one of the stories from my childhood as I remembered it. The original prologue for the stories - now lost to history - explained that I was doing it mostly out of boredom and to torture my mother.
 <br><br>
 
-They have lived for most of this time at a website named Autobiographical Fiction. I've moved them around a couple of times, but recently when reorganizing all of my sites, I came across them again and decided it was time for an update.
+Originally, they were emails sent to my family. I eventually collected them and published them on a well-hidden website named Autobiographical Fiction. I've moved them around a couple of times, but recently when reorganizing all of my sites, I came across them again and decided it was time for an update.
 <br><br>
 
-So, thanks to the miracle of AI, I present them here cleaned up, spell-checked, and with cute new covers done in the style of my favorite Detective Series from the 1960s and 1970s, Alfred Hitchcock and the Three Investigators. Some of them are actually spot on.
+So, thanks to the miracle of AI, I present them here cleaned up, spell-checked, and with cute new covers done in the style of my favorite detective series from the 1960s and 1970s, Alfred Hitchcock and the Three Investigators. Some of them are actually spot on.
 <br><br>
 
-I showed them to Mom, who got to re-live the horrors of my childhood all over again. She laughed until she cried; she threatened to kill me. A good time was had by all.
+I showed them to Mom, who got to relive the horrors of my childhood all over again. She laughed until she cried; she threatened to kill me. A good time was had by all.
 <br><br>
 
 As a late Christmas present, I used AI and Lulu.com to put them all into a book. I also printed copies for my siblings so that their kids will have yet another thing to throw away when we've all gone to Heaven.
